@@ -1,22 +1,17 @@
-// if...else
+// switch
 
-var name = 'Tanvir Iqbal';
-var isMarried = false;
+var job = prompt('What does Tanvir do?');
 
-if(isMarried){
-    console.log(name + ' is married');
-}
-else {
-    console.log(name + ' is not married');
-}
-
-// Diferrence between '==' and '==='
-
-if(10 == "10") {
-    console.log('Somthing to print.'); // '==' does Type Coercion, so this will print.
+switch(job.toLowerCase()) {
+    case 'programmer':
+        alert('Tanvir is a ' +job);
+        break;
+    case 'driver':
+        alert('Tanvir is a ' + job);
+        break;
+    default:
+        alert('Tanvir does something else. (' + job + ')');
 }
 
-if(10 === "10") {
-    console.log('Somthing to print.'); // '==' does not Type Coercion, so this will not print.
-}
+
 
