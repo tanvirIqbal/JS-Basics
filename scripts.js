@@ -1,26 +1,30 @@
-// Data Types and Variables
+// Some string operation
 
 // String: Sequence of character, used for text
 
 var name = 'Tanvir Iqbal';
 console.log(name);
 
-// Number: Floating points numbers, for decimal and integers.
+// String Interpolation
+var nickName = 'the bookworm traveller';
+console.log(`Nickname: ${nickName}`);
 
-var age = 29;
-console.log(age);
+// Template Literals
+var multiLines = `Look how
+    cool this string is.
+    It is on multiple lines!`;
+console.log(multiLines);
 
-// Boolean: Logical data types that can only be true or false
+// Lower Case
+console.log(name.toLowerCase());
 
-var isMarried = false;
-console.log(isMarried);
+// Upper Case
+console.log(name.toUpperCase());
 
-// Undefined: variable is declared but not initialized
+// Replace
+console.log(name.replace('Tanvir','Tafhim')); // It returns a new sentence, not works on name variable.
 
-var isInLove;
-console.log(isInLove);
+// Includes
+console.log(name.includes('Tanvir')); // True
+console.log(name.includes('Tafhim')); // False
 
-// Null: Null means an empty or non-existent value. Null is assigned, and explicitly means nothing.
-
-var eyeColor = null;
-console.log(eyeColor);
