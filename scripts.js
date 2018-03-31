@@ -1,11 +1,22 @@
-// Variable Mutation
+// if...else
 
 var name = 'Tanvir Iqbal';
-var age = 29;
+var isMarried = false;
 
-console.log(name + ' is ' + age + ' years old.');
+if(isMarried){
+    console.log(name + ' is married');
+}
+else {
+    console.log(name + ' is not married');
+}
 
-age = 'Twenty Nine';
+// Diferrence between '==' and '==='
 
-console.log(name + ' is ' + age + ' years old.'); // You can assign one type of value to another type of variable.
+if(10 == "10") {
+    console.log('Somthing to print.'); // '==' does Type Coercion, so this will print.
+}
+
+if(10 === "10") {
+    console.log('Somthing to print.'); // '==' does not Type Coercion, so this will not print.
+}
 
