@@ -1,27 +1,27 @@
-// coding challange
+// Functions
 
-var playerOneHeight = 500;
-var playerOneAge = 20;
-
-var playerTwoHeight = 500;
-var playerTwoAge = 20;
-
-var playerThreeHeight = 500;
-var playerThreeAge = 20;
-
-var playerOneResult = playerOneHeight + playerOneAge * 5;
-var playerTwoResult = playerTwoHeight + playerTwoAge * 5;
-var playerThreeResult = playerThreeHeight + playerThreeAge * 5;
-
-if(playerOneResult > playerTwoResult && playerOneResult > playerThreeResult) {
-    console.log('Player One Wins with ' + playerOneResult + ' points!');
+function calculateAge(yearOfBirth) {
+    return 2018 - yearOfBirth;
 }
-else if(playerTwoResult > playerOneResult && playerTwoResult > playerThreeResult) {
-    console.log('Player Two Wins with ' + playerTwoResult + ' points!');
+
+var ageOfTanvir = calculateAge(1989);
+//console.log(ageOfTanvir);
+var ageOfTanvir = calculateAge(1992);
+//console.log(ageOfTanvir);
+
+
+
+function yearsUntilRetirement(name, yearOfBirth) {
+    var age = calculateAge(yearOfBirth);
+    var retirement = 65 - age;
+    if(retirement >= 0) {
+        console.log(name + ' will retire in ' + retirement + ' years');
+    }
+    else {
+        console.log(name + ' is already retired');
+    }
 }
-else if(playerThreeResult > playerOneResult && playerThreeResult > playerTwoResult) {
-    console.log('Player Three Wins with ' + playerThreeResult + ' points!');
-}
-else {
-    console.log('Draw');
-}
+
+yearsUntilRetirement('Tanvir', 1989);
+yearsUntilRetirement('Tafhim', 1992);
+yearsUntilRetirement('Amjad', 1952);
