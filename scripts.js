@@ -1,15 +1,32 @@
-// Objects and Properties
+// Loops
 
-var tanvir = {
-    firstName: 'Tanvir',
-    lastName: 'Iqbal',
-    yeaarOfBirth: 1989,
-    job: 'Developer',
-    isMarried: false,
-    family: ['Amjad', 'Ferdousi', 'Tafhim'],
-    age: function() {
-        return 2018 - this.yeaarOfBirth;
-    }
+// for Loops
+var names = ['John', 'Jane', 'Bob', 'Marry', 'Mark'];
+for (let i = 0; i < names.length; i++) {
+    console.log(names[i]);
 }
 
-console.log(tanvir.age());
+// while loop
+var i = 0;
+while (i < names.length) {
+    console.log(names[i]);
+    i++;
+}
+
+// break : breaks the loops
+for (let i = 1; i <= 5; i++) {
+    if (i === 3) {
+        break;
+    }
+    console.log(i);
+}
+
+// continue : skip the current iteration
+for (let i = 1; i <= 5; i++) {
+    if (i === 3) {
+        continue;
+    }
+    console.log(i);
+}
+
+
