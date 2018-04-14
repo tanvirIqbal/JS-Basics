@@ -1,32 +1,27 @@
-// Loops
+// Coding challenge 2
 
-// for Loops
-var names = ['John', 'Jane', 'Bob', 'Marry', 'Mark'];
-for (let i = 0; i < names.length; i++) {
-    console.log(names[i]);
-}
+var birthYears = [1965, 2008, 1992];
 
-// while loop
-var i = 0;
-while (i < names.length) {
-    console.log(names[i]);
-    i++;
-}
 
-// break : breaks the loops
-for (let i = 1; i <= 5; i++) {
-    if (i === 3) {
-        break;
+
+function printFullAge(years) {
+    var ages = [];
+    for (let i = 0; i < years.length; i++) {
+        ages[i] = 2018 - years[i];
     }
-    console.log(i);
-}
-
-// continue : skip the current iteration
-for (let i = 1; i <= 5; i++) {
-    if (i === 3) {
-        continue;
+    var fullAge = [];
+    for (let i = 0; i < ages.length; i++) {
+        if (ages[i] >= 18 ) {
+            console.log('Person ' + (i+1) + ' is full age');
+            fullAge[i] = true;
+        }
+        else {
+            console.log('Person ' + (i+1) + ' is not full age');
+            fullAge[i] = false;
+        }
     }
-    console.log(i);
+
+    return fullAge;
 }
 
-
+console.log(printFullAge(birthYears));
